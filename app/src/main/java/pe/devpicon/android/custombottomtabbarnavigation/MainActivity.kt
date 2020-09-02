@@ -33,49 +33,44 @@ class MainActivity : AppCompatActivity() {
 
             })
             this.currentItem = 0
+
+            viewBinding.bottomNavigation.setOnNavigationItemSelectedListener { item ->
+                when (item.itemId) {
+                    R.id.menu_item_home -> {
+                        this.currentItem = 0
+                        true
+                    }
+                    R.id.menu_item_search -> {
+                        this.currentItem = 1
+                        true
+                    }
+                    R.id.menu_item_add -> {
+                        this.currentItem = 2
+                        true
+                    }
+                    R.id.menu_item_notifications -> {
+                        this.currentItem = 3
+                        true
+                    }
+                    R.id.menu_item_profile -> {
+                        this.currentItem = 4
+                        true
+                    }
+                    else -> false
+                }
+            }
         }
-        viewBinding.btnHome.setImageResource(R.drawable.ic_home_blue)
 
 
     }
 
     private fun changingBottomTabs(position: Int) = with(viewBinding) {
         when (position) {
-            0 -> {
-                btnHome.setImageResource(R.drawable.ic_home_blue)
-                btnSearch.setImageResource(R.drawable.ic_search_black)
-                btnAdd.setImageResource(R.drawable.ic_add_black)
-                btnNotifications.setImageResource(R.drawable.ic_notifications_black)
-                btnProfile.setImageResource(R.drawable.ic_person_outline_black)
-            }
-            1 -> {
-                btnHome.setImageResource(R.drawable.ic_home_black)
-                btnSearch.setImageResource(R.drawable.ic_search_blue)
-                btnAdd.setImageResource(R.drawable.ic_add_black)
-                btnNotifications.setImageResource(R.drawable.ic_notifications_black)
-                btnProfile.setImageResource(R.drawable.ic_person_outline_black)
-            }
-            2 -> {
-                btnHome.setImageResource(R.drawable.ic_home_black)
-                btnSearch.setImageResource(R.drawable.ic_search_black)
-                btnAdd.setImageResource(R.drawable.ic_add_blue)
-                btnNotifications.setImageResource(R.drawable.ic_notifications_black)
-                btnProfile.setImageResource(R.drawable.ic_person_outline_black)
-            }
-            3 -> {
-                btnHome.setImageResource(R.drawable.ic_home_black)
-                btnSearch.setImageResource(R.drawable.ic_search_black)
-                btnAdd.setImageResource(R.drawable.ic_add_black)
-                btnNotifications.setImageResource(R.drawable.ic_notifications_blue)
-                btnProfile.setImageResource(R.drawable.ic_person_outline_black)
-            }
-            4 -> {
-                btnHome.setImageResource(R.drawable.ic_home_black)
-                btnSearch.setImageResource(R.drawable.ic_search_black)
-                btnAdd.setImageResource(R.drawable.ic_add_black)
-                btnNotifications.setImageResource(R.drawable.ic_notifications_black)
-                btnProfile.setImageResource(R.drawable.ic_person_outline_blue)
-            }
+            0 -> bottomNavigation.selectedItemId = R.id.menu_item_home
+            1 -> bottomNavigation.selectedItemId = R.id.menu_item_search
+            2 -> bottomNavigation.selectedItemId = R.id.menu_item_add
+            3 -> bottomNavigation.selectedItemId = R.id.menu_item_notifications
+            4 -> bottomNavigation.selectedItemId = R.id.menu_item_profile
         }
     }
 }
