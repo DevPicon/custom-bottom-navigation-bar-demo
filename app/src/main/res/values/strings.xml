@@ -5,6 +5,10 @@
     <string name="content_description_add">add</string>
     <string name="content_description_search">search</string>
     <string name="content_description_home">home</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_profile">profile</string>
+    <string name="menu_notifications">notifications</string>
+    <string name="menu_add">add</string>
+    <string name="menu_search">search</string>
+    <string name="menu_home">home</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
