@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Custom Bottom Tab Bar Navigation</string>
+    <string name="content_description_profile">profile</string>
+    <string name="content_description_notifications">notifications</string>
+    <string name="content_description_add">add</string>
+    <string name="content_description_search">search</string>
+    <string name="content_description_home">home</string>
 </resources>
