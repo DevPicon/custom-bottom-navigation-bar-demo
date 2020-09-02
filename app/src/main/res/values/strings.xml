@@ -5,4 +5,6 @@
     <string name="content_description_add">add</string>
     <string name="content_description_search">search</string>
     <string name="content_description_home">home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
