@@ -21,6 +21,8 @@
         android:layout_margin="15dp"
         android:background="@drawable/bottom_shape_navigation"
         android:elevation="5dp"
+        app:itemIconTint="@color/navigation_color"
+        app:itemTextColor="@color/navigation_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
