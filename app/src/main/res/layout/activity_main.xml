@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="15dp"
@@ -27,72 +28,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_margin="15dp"
-        android:background="@drawable/bottom_shape_navigation"
-        android:elevation="5dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="5dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/btn_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
-            android:contentDescription="@string/content_description_home"
-            android:padding="10dp"
-            android:src="@drawable/ic_home_black" />
-
-        <ImageView
-            android:id="@+id/btn_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
-            android:contentDescription="@string/content_description_search"
-            android:padding="10dp"
-            android:src="@drawable/ic_search_black" />
-
-        <ImageView
-            android:id="@+id/btn_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
-            android:contentDescription="@string/content_description_add"
-            android:padding="10dp"
-            android:src="@drawable/ic_add_black" />
-
-        <ImageView
-            android:id="@+id/btn_notifications"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
-            android:contentDescription="@string/content_description_notifications"
-            android:padding="10dp"
-            android:src="@drawable/ic_notifications_black" />
-
-        <ImageView
-            android:id="@+id/btn_profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
-            android:contentDescription="@string/content_description_profile"
-            android:padding="10dp"
-            android:src="@drawable/ic_person_outline_black" />
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
