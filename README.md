@@ -1,5 +1,10 @@
 # Custom Bottom Navigation Bar Demo
 
-I was just practicing how to build a simple custom bottom navigation bar with a custom shape, drawables, viewpager and fragments
+This repository contains two ways to implement this custom bottom navigation bar.
 
-![alt text](https://github.com/DevPicon/custom-bottom-navigation-bar-demo/raw/master/images/demo.gif "Demo gif")
+* On **without-material-bottom-navigation-bar** branch, I used just ImageViews, ViewPager and Fragments.
+* On **with-material-bottom-navigation-bar** branch, I used Material BottomNavigationView, ViewPager and Fragments
+
+By default, in **master**, you will find the implementation using material.
+
+![alt text](https://github.com/DevPicon/custom-bottom-navigation-bar-demo/raw/with-material-bottom-navigation-bar/images/demo.gif "Demo gif")
